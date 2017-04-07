@@ -1,5 +1,5 @@
 *{
-	padding: 10px;
+	padding: 5px;
 	margin: 0px;
 }
 
@@ -11,45 +11,73 @@
 		url("..font/B20Sans.ttf")format("ttf");
 	font-weight: normal;
 	font-style: normal;
+	font-family: 'FRABK';
 }
 
 body{
-	background: #212121;
+	background: #FFFFFF;
 	color: #ffffff;
-	font-family: "B20Sans", Helvetica,Verdana;
+	font-family: "FRABK", Helvetica,Verdana;
 	font-size: 2em;
 }
 
 h1{
-	color: #F60;
+	color: #FF5900;
 	margin: 0.25EM auto;
 	text-align: center;
 	-webkit-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
 	-ms-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
 	-o-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
 	-moz-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
-	text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
-header,nav,footer{
-	background: #1E6381;
+header{
+	background: #FFFFFF;
+	color: black;
 	border-radius: 0.5em;
 	margin: 0.5em auto;
 	max-width: 960px;
 	padding: 0.25em;
 	text-align: center; 
 }
+nav{
+	background: #F2B80D;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	min-height: 60px;
+	max-height: 45 px;
+	padding: 0.25em;
+	text-align: left;
+	font-size: 20px; 
+}
+
+ul, ol{
+	list-style: none;
+}
+
+footer{
+	background: #808080;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	height: 101px; 
+	font-size: 18px;
+}
 
 section#contenedor{
-	margin: 0.5em auto;
+	margin: 0.2em auto;
 	max-width: 960px;
 	padding: 0px;
 	text-align: center;
 	color: #000000;
+
 }
 
 section#principal,aside{
-	background: #1E6381;
+	background: #B3B3B3;
 	border-radius: 0.5em;
 	display: inline-block;
 	margin: 0.2em auto;
@@ -60,12 +88,62 @@ section#principal,aside{
 }
 
 article{
-	background: #011E30;
+	background: #006680;
 	border-radius: 0.5em;
 	min-height: 140px;
 	padding: 0.25em;
+	font-size: 25px;
+	text-align: justify;
 }
 
 aside{
-	width: 30%;
+	width: 20%;
+	background: #F2B80D;
+	text-align: center;
+	float: right;
+	#border: 5px solid black;
 }
+
+
+nav a{
+	padding: 3px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: #ffffff;
+	color: #011E30;
+	text-decoration: none;
+}
+
+nav a:hover{
+	padding: 3px;
+	border: 1px solid green;
+	border-radius: 10px;
+	background: black;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+aside ul li{
+	display: block;
+}
+
+.menu li a{
+	padding: 10px 15px;
+	text-decoration: none;
+	display: block;
+}
+
+.menu > li{
+	float: left;
+}
+
+.menu li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.menu li:hover > ul{
+	display: block;
+}
+
